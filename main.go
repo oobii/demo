@@ -19,12 +19,13 @@ func main() {
 
 	// fmt.Println(greetings2.Hello("Joe"))
 
+	names := []string {"Joe", "Tim", "Sara"}
 	
-	message, err := greetings2.Hello("Alice")
+	messages, err := greetings2.Hellos(names)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	fmt.Println(message)
+	fmt.Println(messages)
 
 }
